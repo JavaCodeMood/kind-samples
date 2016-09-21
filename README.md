@@ -1,7 +1,7 @@
-#HeartBeat
+#kind-samples
 <div>
     <p>
-     java核心知识实战
+     java核心知识,jdk新特性，io，netty网络通讯，java设计模式最佳实战
     </p>
 </div>
 
