@@ -5,7 +5,7 @@
  *
 */
 
-package com.kind.samples.netty;
+package com.kind.samples.netty.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

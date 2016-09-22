@@ -6,7 +6,9 @@
  *
 */
 
-package com.kind.samples.patterns.singleton;
+package com.kind.samples.patterns.singleton.impl;
+
+import com.kind.samples.patterns.singleton.Factory;
 
 public class SingletonFactory  implements Factory{
 	private int count;

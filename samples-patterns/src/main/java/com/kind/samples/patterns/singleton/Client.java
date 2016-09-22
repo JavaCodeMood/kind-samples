@@ -1,5 +1,8 @@
 package com.kind.samples.patterns.singleton;
 
+import com.kind.samples.patterns.singleton.impl.SingletonFactory;
+import com.kind.samples.patterns.singleton.impl.SingletonTest;
+
 public class Client {
 
 	public void test() {
@@ -8,7 +11,7 @@ public class Client {
 	}
 
 	public void testSingleton() {
-		TestSingleton test = TestSingleton.getInstance();
+		SingletonTest test = SingletonTest.getInstance();
 		test.printCount();
 	}
 

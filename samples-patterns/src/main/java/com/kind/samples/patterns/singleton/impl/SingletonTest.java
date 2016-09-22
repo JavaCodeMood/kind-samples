@@ -1,20 +1,20 @@
-package com.kind.samples.patterns.singleton;
+package com.kind.samples.patterns.singleton.impl;
 
-public class TestSingleton {
-	// public static TestSingleton test = new TestSingleton();
+public class SingletonTest {
+	// public static SingletonTest test = new SingletonTest();
 	private static int count1;
 	private static int count2 = 0;
-	public static TestSingleton test = new TestSingleton();
+	public static SingletonTest test = new SingletonTest();
 	/* different position will cause different output */
 
-	private TestSingleton() {
+	private SingletonTest() {
 		count1++;
 		System.out.println("count1 in constructor: " + count1);
 		count2++;
 		System.out.println("count2 in constructor: " + count2);
 	}
 
-	public static TestSingleton getInstance() {
+	public static SingletonTest getInstance() {
 		return test;
 	}
 
