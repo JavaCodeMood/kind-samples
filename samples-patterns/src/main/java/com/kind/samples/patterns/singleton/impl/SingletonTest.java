@@ -1,7 +1,7 @@
 package com.kind.samples.patterns.singleton.impl;
 
 public class SingletonTest {
-	// public static SingletonTest test = new SingletonTest();
+	// public static SingletonTest testClient = new SingletonTest();
 	private static int count1;
 	private static int count2 = 0;
 	public static SingletonTest test = new SingletonTest();
