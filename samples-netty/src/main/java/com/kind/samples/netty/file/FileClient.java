@@ -23,7 +23,6 @@ import io.netty.util.CharsetUtil;
 /**
  * 说明：文件客户端
  *
- * @author <a href="http://www.waylau.com">waylau.com</a> 2015年11月6日
  */
 public class FileClient {
 
@@ -83,7 +82,7 @@ public class FileClient {
 	 * @throws InterruptedException
 	 */
 	public static void main(String[] args) throws InterruptedException, IOException {
-		new FileClient("localhost", 8082, "D:/reciveFile.txt").run();
+		new FileClient("localhost", 8082, "D:/test.txt").run();
 	}
 
 }

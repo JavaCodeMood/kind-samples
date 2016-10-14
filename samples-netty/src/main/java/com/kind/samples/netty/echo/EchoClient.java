@@ -14,12 +14,6 @@ import io.netty.handler.codec.Delimiters;
 import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
-/**
- * Sends one message when a connection is open and echoes back any received
- * data to the server.  Simply put, the echo client initiates the ping-pong
- * traffic between the echo client and server by sending the first message to
- * the server.
- */
 public final class EchoClient {
  
     static final String HOST = System.getProperty("host", "127.0.0.1");

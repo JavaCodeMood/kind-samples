@@ -31,7 +31,6 @@ import io.netty.util.CharsetUtil;
 /**
  * 说明：文件服务器
  *
- * @author <a href="http://www.waylau.com">waylau.com</a> 2015年11月5日
  */
 public class FileServer {
 
