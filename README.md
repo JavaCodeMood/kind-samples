@@ -12,8 +12,8 @@
         <li>samples-features  java 1.8新特性最佳实践</li>
         <li>samples-io        java io实践(磁盘io和网络io)</li>
         <li>samples-netty     netty实战</li>
-        <li>samples-patterns  设计模式实战</li>
-        <li>samples-utils     项目实践过程中一些优秀的类库</li>
+        <li>samples-patterns  设计模式最佳实践</li>
+        <li>samples-utils     项目实践过程中使用的一些优秀的类库</li>
     </ul>
 </div>
 
