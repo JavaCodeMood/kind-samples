@@ -6,7 +6,6 @@ import com.kind.samples.patterns.abstractfactory.BmwCarFactory;
  * Created by weiguo.liu on 2016/10/14.
  */
 public class BmwSportCar implements BmwCarFactory {
-    @Override
     public String createBmwCar() {
         return "I am a bmw sport car*********";
     }
