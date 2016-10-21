@@ -18,16 +18,17 @@
         <!-- 子项目默认继承配置，也可以自己指定版本 -->
         <dependencies>
             <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>19.0</version>
-            </dependency>
-            <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
                 <scope>test</scope>
             </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>19.0</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.testng</groupId>
                 <artifactId>testng</artifactId>

@@ -13,7 +13,7 @@ public class LambdaAnonymous {
     /**
      * JDK7 匿名内部类写法
      */
-    public void generalStyle() {
+    public void anonymousStyle() {
         List<String> names = Arrays.asList("cary", "jane", "jerry");
         Collections.sort(names, new Comparator<String>() {
             @Override
@@ -63,7 +63,7 @@ public class LambdaAnonymous {
 
 
     public static void main(String[] args) {
-        new LambdaAnonymous().generalStyle();
+        new LambdaAnonymous().anonymousStyle();
         new LambdaAnonymous().lambdaStyle();
         new LambdaAnonymous().new Anonymous().anonymousStyle();
         new LambdaAnonymous().new Lambda().lambdaStyle();

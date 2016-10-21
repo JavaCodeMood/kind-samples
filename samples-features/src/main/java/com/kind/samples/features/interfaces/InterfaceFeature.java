@@ -6,7 +6,9 @@ package com.kind.samples.features.interfaces;
  */
 public class InterfaceFeature {
     public static void main(String[] args) {
-
+        Formula formula = new InterfaceFeature().new ForumlaImpl();
+        formula.calculate(100);
+        formula.sqrt(1);
     }
 
     interface Formula {
@@ -15,19 +17,20 @@ public class InterfaceFeature {
         default double sqrt(int a) {
             return Math.sqrt(a);
         }
+
     }
 
-    static class For implements Formula {
+
+    class ForumlaImpl implements Formula {
         @Override
         public double calculate(int a) {
-            return 0;
+            return a;
         }
 
         @Override
         public double sqrt(int a) {
-            return 0;
+            return a;
         }
 
     }
-
 }
