@@ -1,4 +1,4 @@
-package com.kind.samples.core.jvm.classloader;
+package com.kind.samples.core.jvm.classLoader;
 
 
 import java.io.IOException;
@@ -10,14 +10,14 @@ import java.io.InputStream;
 public class MyClassLoader {
 
     public void testClassLoader() throws Exception {
-        Object obj = getInstanceByUserDefinedClassLoader("com.kind.samples.core.jvm.classloader.MyClassLoader");
+        Object obj = getInstanceByUserDefinedClassLoader("com.kind.samples.core.jvm.classLoader.MyClassLoader");
         /**
-         *输出class com.jianchen.classloader.MyClassLoader
+         *输出class com.jianchen.classLoader.MyClassLoader
          */
         System.out.println(obj.getClass().getName());
         System.out.println(obj.getClass());
         /**
-         *输出class com.jianchen.classloader.MyClassLoader
+         *输出class com.jianchen.classLoader.MyClassLoader
          */
         System.out.println(obj.getClass().getClassLoader().getClass());
 
@@ -38,7 +38,7 @@ public class MyClassLoader {
      * @throws Exception
      */
     public void testInstanceCast() throws Exception {
-        Object obj = getInstanceByUserDefinedClassLoader("com.kind.samples.core.jvm.classloader.MyClassLoader");
+        Object obj = getInstanceByUserDefinedClassLoader("com.kind.samples.core.jvm.classLoader.MyClassLoader");
         MyClassLoader classLoaderTest = (MyClassLoader) obj;
     }
 
@@ -52,9 +52,9 @@ public class MyClassLoader {
      * @throws Exception
      */
     public void testStaticVariableOfClass() throws Exception {
-        Object obj = getInstanceByUserDefinedClassLoader("com.kind.samples.core.jvm.classloader.DataHolder");//current count value is 1
+        Object obj = getInstanceByUserDefinedClassLoader("com.kind.samples.core.jvm.classLoader.DataHolder");//current count value is 1
 
-        Class.forName("com.kind.samples.core.jvm.classloader.DataHolder").newInstance();//current count value is 1
+        Class.forName("com.kind.samples.core.jvm.classLoader.DataHolder").newInstance();//current count value is 1
 
         //验证得到输出相同的值
     }
