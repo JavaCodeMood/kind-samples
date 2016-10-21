@@ -9,11 +9,11 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
  * @date 2015-8-24-下午5:27:50
  * @version 1.0.0
  */
-public class ReadWriteLockTest {
+public class MyReadWriteLock {
 	private ReentrantReadWriteLock rwl = new ReentrantReadWriteLock();
 
 	public static void main(String[] args) {
-		final ReadWriteLockTest test = new ReadWriteLockTest();
+		final MyReadWriteLock test = new MyReadWriteLock();
 		/**
 		 * 线程1
 		 */

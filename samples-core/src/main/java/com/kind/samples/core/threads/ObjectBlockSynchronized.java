@@ -5,7 +5,7 @@ package com.kind.samples.core.threads;
  * 
  * @author cary
  */
-public class TestSynchronized {
+public class ObjectBlockSynchronized {
 	/**
 	 * 同步代码块
 	 */
@@ -57,7 +57,7 @@ public class TestSynchronized {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		final TestSynchronized test = new TestSynchronized();
+		final ObjectBlockSynchronized test = new ObjectBlockSynchronized();
 		Thread test1 = new Thread(new Runnable() {
 			public void run() {
 				test.testBlock();

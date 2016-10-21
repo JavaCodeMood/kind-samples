@@ -1,6 +1,6 @@
 package com.kind.samples.core.threads;
 
-public class TraditionalTest {
+public class TraditionalThread {
 
 	/**
 	 * @param args

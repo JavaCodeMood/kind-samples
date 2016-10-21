@@ -3,17 +3,20 @@ package com.kind.samples.core.threads;
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * lock锁的应用
+ * 
  * @author cary
  * @date 2015-8-24-下午5:01:45
  * @version 1.0.0
  */
-public class LockTest {
+public class MyLock2 {
+	private Lock lock = new ReentrantLock();
 	private ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
 	public static void main(String[] args) {
-		final LockTest test = new LockTest();
+		final MyLock2 test = new MyLock2();
 
 		/**
 		 * 创建第一个线程
@@ -44,7 +47,6 @@ public class LockTest {
 		/**
 		 * 实例化锁对象
 		 */
-		Lock lock = new ReentrantLock();
 		lock.lock();
 		try {
 			System.out.println(thread.getName() + "得到了锁");

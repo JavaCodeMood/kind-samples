@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  * @version 1.0.0
  * @Copyright © 2015 www.kindapp.net
  */
-public class ThreadPoolTest {
+public class MyThreadPool {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		ExecutorService threadPool1 = Executors.newFixedThreadPool(5);

@@ -1,4 +1,4 @@
-package com.kind.samples.core.threads.cas;
+package com.kind.samples.core.cas;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

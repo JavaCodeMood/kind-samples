@@ -6,12 +6,12 @@ package com.kind.samples.core.threads;
  * 
  * @author cary
  */
-public class TestSynchronized2 {
+public class ClassSynchronized {
 	/**
 	 * 类锁
 	 */
 	public void testClassLock() {
-		synchronized (TestSynchronized2.class) {
+		synchronized (ClassSynchronized.class) {
 			int i = 5;
 			while (i-- > 0) {
 				System.out
@@ -71,7 +71,7 @@ public class TestSynchronized2 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		final TestSynchronized2 test = new TestSynchronized2();
+		final ClassSynchronized test = new ClassSynchronized();
 		Thread testClass = new Thread(new Runnable() {
 			public void run() {
 				test.testClassLock();
@@ -79,7 +79,7 @@ public class TestSynchronized2 {
 		}, "testClassLock");
 		Thread testStatic = new Thread(new Runnable() {
 			public void run() {
-				TestSynchronized2.testStaticLock();
+				ClassSynchronized.testStaticLock();
 			}
 		}, "testStaticLock");
 		/**
@@ -97,7 +97,7 @@ public class TestSynchronized2 {
 		/**
 		 * 静态方法
 		 */
-		TestSynchronized2.testStaticLock();
+		ClassSynchronized.testStaticLock();
 
 	}
 }

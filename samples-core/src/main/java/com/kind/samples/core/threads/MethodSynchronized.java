@@ -5,7 +5,7 @@ package com.kind.samples.core.threads;
  * 
  * @author cary
  */
-public class TestSynchronized3 {
+public class MethodSynchronized {
 	/**
 	 * 锁普通方法
 	 */
@@ -40,7 +40,7 @@ public class TestSynchronized3 {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		final TestSynchronized test = new TestSynchronized();
+		final ObjectBlockSynchronized test = new ObjectBlockSynchronized();
 		Thread test1 = new Thread(new Runnable() {
 			public void run() {
 				test.testNormal();
@@ -48,7 +48,7 @@ public class TestSynchronized3 {
 		}, "testNormal");
 		Thread test2 = new Thread(new Runnable() {
 			public void run() {
-				TestSynchronized3.testStatic();
+				MethodSynchronized.testStatic();
 			}
 		}, "testStatic");
 		/**

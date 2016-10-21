@@ -9,7 +9,7 @@ import java.util.Random;
  * @date 2015-8-24-下午6:06:01
  * @version 1.0.0
  */
-public class ThreadLocalTest {
+public class MyThreadLocal {
 	private static ThreadLocal<Integer> x = new ThreadLocal<Integer>();
 
 	public static void main(String[] args) {
