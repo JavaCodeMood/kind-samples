@@ -1,7 +1,7 @@
 package com.kind.samples.patterns.abstractfactory;
 
-import com.kind.samples.patterns.abstractfactory.impl.SportCarFactory;
 import com.kind.samples.patterns.abstractfactory.impl.BusinessCarFactory;
+import com.kind.samples.patterns.abstractfactory.impl.SportCarFactory;
 
 /**
  * Created by weiguo.liu on 2016/10/14.

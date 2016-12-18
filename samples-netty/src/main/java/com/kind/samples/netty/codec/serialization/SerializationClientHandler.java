@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.kind.samples.netty.codec.serialization;
 
@@ -12,17 +12,17 @@ import io.netty.channel.SimpleChannelInboundHandler;
  * @author <a href="http://www.waylau.com">waylau.com</a> 2015年11月7日
  */
 public class SerializationClientHandler extends
-		SimpleChannelInboundHandler<Object> {
+        SimpleChannelInboundHandler<Object> {
 
-	@Override
-	protected void channelRead0(ChannelHandlerContext ctx, Object obj)
-			throws Exception {
-		if (obj instanceof SerializationBean) {
-			SerializationBean user = (SerializationBean) obj;
-			System.out.println("Client get msg form Server - name:"
-					+ user.getName() + ";age:" + user.getAge());
-		}
+    @Override
+    protected void channelRead0(ChannelHandlerContext ctx, Object obj)
+            throws Exception {
+        if (obj instanceof SerializationBean) {
+            SerializationBean user = (SerializationBean) obj;
+            System.out.println("Client get msg form Server - name:"
+                    + user.getName() + ";age:" + user.getAge());
+        }
 
-	}
+    }
 
 }

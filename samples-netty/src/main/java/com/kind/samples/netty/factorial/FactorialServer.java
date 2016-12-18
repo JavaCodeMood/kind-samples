@@ -19,7 +19,7 @@ public final class FactorialServer {
     static final int PORT = Integer.parseInt(System.getProperty("port", "8322"));
 
     @SuppressWarnings("deprecation")
-	public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws Exception {
         // Configure SSL.
         final SslContext sslCtx;
         if (SSL) {
@@ -34,9 +34,9 @@ public final class FactorialServer {
         try {
             ServerBootstrap b = new ServerBootstrap();
             b.group(bossGroup, workerGroup)
-             .channel(NioServerSocketChannel.class)
-             .handler(new LoggingHandler(LogLevel.INFO))
-             .childHandler(new FactorialServerInitializer(sslCtx));
+                    .channel(NioServerSocketChannel.class)
+                    .handler(new LoggingHandler(LogLevel.INFO))
+                    .childHandler(new FactorialServerInitializer(sslCtx));
 
             b.bind(PORT).sync().channel().closeFuture().sync();
         } finally {

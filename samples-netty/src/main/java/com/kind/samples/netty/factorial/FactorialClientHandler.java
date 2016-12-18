@@ -26,7 +26,7 @@ public class FactorialClientHandler extends SimpleChannelInboundHandler<BigInteg
     public BigInteger getFactorial() {
         boolean interrupted = false;
         try {
-            for (;;) {
+            for (; ; ) {
                 try {
                     return answer.take();
                 } catch (InterruptedException ignore) {
@@ -47,7 +47,7 @@ public class FactorialClientHandler extends SimpleChannelInboundHandler<BigInteg
     }
 
     public void messageReceived(ChannelHandlerContext ctx, final BigInteger msg) {
-        receivedMessages ++;
+        receivedMessages++;
         if (receivedMessages == FactorialClient.COUNT) {
             // Offer the answer after closing the connection.
             ctx.channel().close().addListener(new ChannelFutureListener() {
@@ -92,10 +92,10 @@ public class FactorialClientHandler extends SimpleChannelInboundHandler<BigInteg
         }
     };
 
-	@Override
-	protected void channelRead0(ChannelHandlerContext arg0, BigInteger arg1)
-			throws Exception {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    protected void channelRead0(ChannelHandlerContext arg0, BigInteger arg1)
+            throws Exception {
+        // TODO Auto-generated method stub
+
+    }
 }

@@ -1,9 +1,11 @@
 package com.kind.samples.netty.time;
-import java.util.Date;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
+
+import java.util.Date;
+
 /**
  * Created by weiguo.liu on 2016/10/14.
  */

@@ -35,10 +35,10 @@ public class FactorialServerHandler extends SimpleChannelInboundHandler<BigInteg
         ctx.close();
     }
 
-	@Override
-	protected void channelRead0(ChannelHandlerContext arg0, BigInteger arg1)
-			throws Exception {
-		// TODO Auto-generated method stub
-		
-	}
+    @Override
+    protected void channelRead0(ChannelHandlerContext arg0, BigInteger arg1)
+            throws Exception {
+        // TODO Auto-generated method stub
+
+    }
 }

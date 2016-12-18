@@ -1,5 +1,5 @@
 /**
- * 
+ *
  */
 package com.kind.samples.netty.codec.jackson;
 
@@ -12,20 +12,20 @@ import io.netty.channel.SimpleChannelInboundHandler;
  * @author <a href="http://www.waylau.com">waylau.com</a> 2015年11月7日
  */
 public class JacksonClientHandler extends
-		SimpleChannelInboundHandler<Object> {
+        SimpleChannelInboundHandler<Object> {
 
-	@Override
-	protected void channelRead0(ChannelHandlerContext ctx, Object obj)
-			throws Exception {
-		String jsonString = "";
-		if (obj instanceof JacksonBean) {
-			JacksonBean user = (JacksonBean) obj;
-			
-			jsonString = JacksonMapper.getInstance().writeValueAsString(user); // 对象转为json字符串
-		} else {
-			jsonString = JacksonMapper.getInstance().writeValueAsString(obj); // 对象转为json字符串
-		}
-		System.out.println("Client get msg form Server -" + jsonString);
-	}
+    @Override
+    protected void channelRead0(ChannelHandlerContext ctx, Object obj)
+            throws Exception {
+        String jsonString = "";
+        if (obj instanceof JacksonBean) {
+            JacksonBean user = (JacksonBean) obj;
+
+            jsonString = JacksonMapper.getInstance().writeValueAsString(user); // 对象转为json字符串
+        } else {
+            jsonString = JacksonMapper.getInstance().writeValueAsString(obj); // 对象转为json字符串
+        }
+        System.out.println("Client get msg form Server -" + jsonString);
+    }
 
 }
