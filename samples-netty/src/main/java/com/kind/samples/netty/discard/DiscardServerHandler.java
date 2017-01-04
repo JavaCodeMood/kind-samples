@@ -16,7 +16,7 @@ public class DiscardServerHandler extends ChannelInboundHandlerAdapter { // (1)
         // 默默地丢弃收到的数据
         ((ByteBuf) msg).release(); // (3)
         */
-    	
+
         /*
         try {
 	        // Do something with msg

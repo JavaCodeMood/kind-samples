@@ -1,4 +1,3 @@
-
 package com.kind.samples.netty.file;
 
 import io.netty.channel.ChannelHandlerContext;

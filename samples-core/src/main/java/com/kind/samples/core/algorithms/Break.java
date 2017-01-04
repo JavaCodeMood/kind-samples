@@ -11,9 +11,8 @@ package com.kind.samples.core.algorithms;
  * Function:跳出循环测试. <br/>
  *
  * @author weiguo.liu
- * @version
- * @since JDK 1.7
  * @see
+ * @since JDK 1.7
  */
 public class Break {
     /**

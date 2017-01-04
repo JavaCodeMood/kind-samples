@@ -1,17 +1,20 @@
 package com.kind.samples.core.cas;
 
-public class Counter {
+import java.util.concurrent.atomic.AtomicInteger;
 
-    public static int count = 0;
+/**
+ * Created by weiguo.liu on 2017/1/4.
+ */
+public class AtomicCounter {
+    public static AtomicInteger count = new AtomicInteger(0);
 
     public static void inc() {
         try {
             Thread.sleep(1);
-            count++;
-        } catch (InterruptedException e) {
+            count.incrementAndGet();
+        } catch (Exception e) {
 
         }
-
     }
 
     public static void main(String[] args) {
@@ -19,12 +22,11 @@ public class Counter {
             new Thread(new Runnable() {
                 @Override
                 public void run() {
-                    Counter.inc();
+                    AtomicCounter.inc();
                 }
             }).start();
         }
-        //这里每次运行的值都有可能不同,可能为1000
-        System.out.println("运行结果:MyCounter.count=" + Counter.count);
-
+        System.out.println("AtomicCount.count:" + AtomicCounter.count);
     }
+
 }

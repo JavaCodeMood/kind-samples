@@ -5,11 +5,6 @@ package com.kind.samples.features.interfaces;
  * Created by weiguo.liu on 2016/10/18.
  */
 public class InterfaceFeature {
-    public static void main(String[] args) {
-        Formula formula = new InterfaceFeature().new ForumlaImpl();
-        formula.calculate(100);
-        formula.sqrt(1);
-    }
 
     interface Formula {
         double calculate(int a);
@@ -32,5 +27,11 @@ public class InterfaceFeature {
             return a;
         }
 
+    }
+
+    public static void main(String[] args) {
+        Formula formula = new InterfaceFeature().new ForumlaImpl();
+        formula.calculate(100);
+        formula.sqrt(1);
     }
 }

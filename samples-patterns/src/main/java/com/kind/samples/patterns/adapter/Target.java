@@ -9,7 +9,6 @@ package com.kind.samples.patterns.adapter;
 
 /**
  * @author weiguo.liu
- * @version
  * @see
  */
 public interface Target {

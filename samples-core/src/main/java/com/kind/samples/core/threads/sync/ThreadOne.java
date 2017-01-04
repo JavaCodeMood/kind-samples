@@ -11,9 +11,8 @@ package com.kind.samples.core.threads.sync;
  * Function: TODO ADD FUNCTION. <br/>
  *
  * @author weiguo.liu
- * @version
- * @since JDK 1.7
  * @see
+ * @since JDK 1.7
  */
 public class ThreadOne implements Runnable {
     private InvokedObject object;

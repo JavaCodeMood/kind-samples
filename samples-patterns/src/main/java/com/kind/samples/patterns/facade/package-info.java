@@ -2,6 +2,8 @@
  * Function:门面模式. <br/>
  *
  * @version
+ * @version
+ * @see Function:门面模式. <br/>
  * @see
  */
 /**
