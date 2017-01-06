@@ -1,4 +1,4 @@
-package com.kind.samples.core.threads;
+package com.kind.samples.core.threads.lock;
 
 import java.util.ArrayList;
 import java.util.concurrent.locks.Lock;
@@ -11,12 +11,11 @@ import java.util.concurrent.locks.ReentrantLock;
  * @version 1.0.0
  * @date 2015-8-24-下午5:01:45
  */
-public class MyLock2 {
-    private Lock lock = new ReentrantLock();
+public class MyLock {
     private ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
     public static void main(String[] args) {
-        final MyLock2 test = new MyLock2();
+        final MyLock test = new MyLock();
 
         /**
          * 创建第一个线程
@@ -49,6 +48,7 @@ public class MyLock2 {
         /**
          * 实例化锁对象
          */
+        Lock lock = new ReentrantLock();
         lock.lock();
         try {
             System.out.println(thread.getName() + "得到了锁");
